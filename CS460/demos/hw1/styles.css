@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Autour+One|Nunito');
+
+body{
+    background-color: #fffb50;
+    font-family: "Nunito", sans-serif;
+    color: #474447;
+}
+
+#banner{
+    background-color: #fffb50;
+}
+
+ h1, h2{
+    font-family: "Autour One", sans-serif;
+    font-weight: bold;    
+}
+
+.navbar{
+    margin-bottom: 0px;
+    border: none;
+    background-color: #474447;
+}
+
+.nav-default{
+    background-color: #fffb50;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #FFFFFF;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #FFFFFF;
+}
+
+.pagebackground{
+    background-image: url("images/frogtile.png");
+}
+
+.content{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 20px;
+}
