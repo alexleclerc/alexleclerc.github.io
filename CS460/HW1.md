@@ -90,7 +90,7 @@ With a plan in place I made the HTML structure for all of the pages, and made th
 </html>
 
 ```
-![HTML Structure Screenshot](img/progressscreenshot1.png)
+![HTML Structure Screenshot](img/progress1.png)
 
 ### 2.2 Multi-Column Layout, Lists, and Table
 The 'Sketch', 'Commission', and 'Contact' pages is where I met most of the requirements for the homework.
