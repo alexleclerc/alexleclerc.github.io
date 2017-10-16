@@ -27,7 +27,9 @@ origin  https://github.com/alexleclerc/CS460.git (push)
 Later I made my remote repositories on github and just cloned them on my machine.
 
 ## 2: Webpage
-I had made HTML websites styled with CSS over the summer, so I had no trouble with that. However I did not know where to begin with Bootstrap (though I wish I had, would have saved so much time!) so I turned to two places: [Bootstrap getting started website](https://getbootstrap.com/docs/3.3/getting-started/) and [W3Schools Bootstrap tutorial](https://www.w3schools.com/bootstrap/). I started out with the 'Hello World' template from Bootstrap's website, did some reading and started planning.
+I had made HTML websites styled with CSS over the summer, so I had no trouble with that. However I did not know where to begin with Bootstrap (though I wish I had, would have saved so much time!) so I turned to two places: [Bootstrap getting started website](https://getbootstrap.com/docs/3.3/getting-started/) and [W3Schools Bootstrap tutorial](https://www.w3schools.com/bootstrap/) and [Bucky Roberts (aka thenewboston's) tutorials on youtube](https://thenewboston.com/videos.php?cat=373). 
+
+I started out with the 'Hello World' template from Bootstrap's website, did some reading and started planning.
 
 
 I mulled over what to do with my webpage for longer than I should have. I wanted something that I could use later. I drew out some ideas on dot grid paper. 
