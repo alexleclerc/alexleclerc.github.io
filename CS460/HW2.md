@@ -1,7 +1,9 @@
 # Homework 2 (CS460)
+[Demo](https://alexleclerc.github.io/CS460/demos/hw2/index.html) | [Repo](https://github.com/alexleclerc/CS460)
+
 The second homework requires us to apply what we learned from homework 1 with the addition of Javascript/jQuery functionality. I had experience with making dynamic forms with javascript and jQuery in the past so this wasn't too much of a challenge.
 
-I originally wanted to make an english to morse code translator, but it would have been hard to meet the list/table requirements with that idea. I decided to make a counter for calories in coffee drinks instead as this would be more like 'computation' and could have output in a list or table.
+I originally wanted to make an english to morse code translator, but it would have been hard to meet the list/table requirements with that idea. I decided to make a counter for calories in coffee drinks instead, as this would be more like 'computation' and could have output in a list or table.
 
 ## 1: Planning
 ##### Requirement(s) addressed: Concept, Wireframe
