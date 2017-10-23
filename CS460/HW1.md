@@ -1,4 +1,5 @@
 # Homework 1 (CS460)
+[Demo](https://alexleclerc.github.io/CS460/demos/hw1/index.html) | [Repo](https://github.com/alexleclerc/CS460)
 
 For the first homework we were asked to learn the basics of HTML and CSS, using git from the command line, and using Bootstrap for the layout. Luckily, I had some previous experience with HTML, CSS, and GitHub. 
 

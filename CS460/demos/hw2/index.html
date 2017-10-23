@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<!--The landing page of my art website. In the future this will probably have an about section and such.-->
+<html lang="en">
+    <head>
+        <title>Coffee Counter</title>
+        <!--required meta for bootstrap-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+        <!--Bootstrap CSS-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+        <!--jQuery CDN from Google-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        
+        <!--my style sheet-->
+        <link rel="stylesheet" type="text/css" href="coffeestyle.css">
+        
+    </head>
+    
+    <body>
+        <div class="container outer">
+            <h1>Coffee Counter</h1>
+            <div class="container inner">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <p>A daily coffee is part of most people's routine. While coffee isn't bad for you, some of the stuff you ask the barista to put in it can be. Here we can run some numbers on the calories that go into your morning cup.</p>
+                    </div>
+                </div>
+                <form id="coffeeForm" method="post">
+                    <div class="row">
+                        
+                            <div class="col-sm-6">
+                                
+                                <!--COFFEE TYPE-->
+                                    <h4>Coffee Type</h4>
+                                    <div class="inside">
+                                        <input type="radio" name="coffeetype" value="0.5" id="coffee" checked="checked">
+                                        <label for="coffee">Coffee</label>
+
+                                        <input type="radio" name="coffeetype" value="1" id="espresso">
+                                        <label for="espresso">Espresso</label>
+                                    </div>
+                                <!--/COFFEE TYPE-->
+                                
+                            </div>
+                            
+                            <div class="col-sm-6">
+                                <!--SIZE-->
+                                    <h4>Size</h4>
+                                    <div class="inside">
+                                        <input type="radio" name="size" value="2" id="eightoz" checked="checked"><label for="eightoz">8oz</label>
+
+                                        <input type="radio" name="size" value="3" id="twelveoz"><label for="twelveoz">12oz</label>
+
+                                        <input type="radio" name="size" value="4" id="sixteenoz"><label for="sixteenoz">16oz</label>
+
+                                        <input type="radio" name="size" value="5" id="twentyoz"><label for="twentyoz">20oz</label>
+                                    </div>
+                                <!--/SIZE-->
+                            </div>
+                            
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            
+                            <!--SHOTS-->
+                            <h4>Extra Shots</h4>
+                                <div class="inside">
+                                    <label for='shots'>Extra Espresso</label>
+                                    <input type="number" min="0" max="6" value="0" id="shots">
+                                </div>
+                            <!--/SHOTS-->
+                            
+                        </div>
+                        <div class="col-sm-6">
+                            
+                            <!--MILK-->
+                                <h4>Milk</h4>
+                                <div class="inside">
+                                    <input type="radio" id="none" value="0" name="milk" checked="checked"><label for="none">None</label>
+
+                                    <input type="radio" id="skim" value="5" name="milk"><label for="skim">Skim</label>
+
+                                    <input type="radio" id="whole" value="9" name="milk"><label for="whole">Whole</label>
+
+                                    <input type="radio" id="handh" value="20" name="milk"><label for="handh">Half & Half</label>
+
+                                    <input type="radio" id="heavy" value="52" name="milk"><label for="heavy">Heavy</label>
+                                </div>
+                            <!--/MILK-->
+                            
+                        </div>
+                    </div>
+
+                    <h4>Extras</h4>
+
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="inside">
+                            <!--SUGAR-->
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <input type="checkbox" id="sugar" value="49" name="sugar" class="extra"><label for="sugar">Sugar</label>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <input type="number" id="sugnum" min="0" max="6" name="sugar" class="extra" value="0" disabled="true">
+                                    </div>
+                                </div>
+                            <!--/SUGAR-->
+                            
+                            <!--WHIP-->
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <input type="checkbox" id="whip" name="whip" value="52" class="extra"><label for="whip">Whipped Cream</label>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <input type="number" id="whipnum" min="0" max="4" name="whip" class="extra" value="0" disabled="true">
+                                    </div>
+                                </div>
+                            <!--/WHIP-->
+                            
+                            <!--HONEY-->
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <input type="checkbox" name="honey" id="honey" value="63" class="extra"><label for="honey">Honey</label>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <input type="number" id="honnum" min="0" max="4" name="honey" class="extra" value="0" disabled="true">
+                                    </div>
+                                </div>
+                            <!--/HONEY-->
+                            
+                            <!--ChOCOLATE-->
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <input type="checkbox" name="chocolate" id="chocolate" value="55" class="extra" ><label for="chocolate">Chocolate</label>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <input type="number" min="0" max="4" name="chocolate" id="chocnum" class="extra" value="0" disabled="true">
+                                    </div>
+                                </div>
+                            <!--/CHOCOLATE-->
+                            
+                            <!--FLAVOR-->
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <input type="checkbox" name="flavor" id="flavor" value="40" class="extra"><label for="flavor">Flavored Syrup</label>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <input type="number" min="0" max="4" name="flavor" id="flavnum" class="extra" value="0" disabled="true">
+                                    </div>
+                                </div>
+                            <!--FLAVOR-->
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!--once the submit button is hit, we'll call a javascript function to add up the total calories, create the output element, and append it to the page-->
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <input type="submit" onclick="return coffeeCalculation()">
+                        </div>
+                    </div>
+                    
+                </form>
+                
+                <hr>
+                <h3>Output</h3>
+                <div class="output">
+                <!--the ouptut table for our coffee chart-->
+                <div class=row>
+                    <div class="col-sm-12">
+                        <table class="table" id="outtable">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        Type
+                                    </th>
+                                    <th>
+                                        Quantity
+                                    </th>
+                                    <th>
+                                        Calories
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <div id="tabletarget">
+                                    
+                                </div>
+                            </tbody>
+                        </table>
+                    </div> 
+                </div>
+
+                <!--the output of the total-->
+                <div class="outtotal">
+                    <div class="row">
+                        <div class="col-sm-4 text-center">
+                            <h3>Total:</h3>
+                        </div>
+                        <div class="col-sm-8 text-center">
+                            <h3><div id="totaltarget"></div></h3>
+                        </div>
+
+                    </div>
+                </div>
+                </div>
+            </div>
+    
+        </div>
+        
+        <!--javascript/jQuery stuff-->
+            <script>
+                //function checks if both required radio buttons are checked
+                function coffeeTypeValidation() {
+                    return $("input:radio[name='coffeetype']").is(":checked") && $("input:radio[name='size']").is(":checked");
+                }
+                
+                function coffeeTypeTotal() {
+                    coffeeBase = $("input[name='coffeetype']:checked").val();
+                    coffeeSize = $("input[name='size']:checked").val();
+                    return coffeeBase * coffeeSize;
+                }
+                
+                function shotsTotal() {
+                    return parseInt($("#shots").val());
+                }
+                
+                function milkTotal() {
+                    return parseInt($("input[name='milk']:checked").val());
+                }
+                
+                function extraTotal() {
+                    var sum = 0;
+                    $(".extra:checkbox").each(function(){
+                       if(this.checked){
+                           sum += $(this).val() * $("input[type='number'][name= " + this.name + "]").val();
+                       } 
+                    });
+                    return sum;
+                }
+                
+                function calorieTotal() {
+                    var total = 0;
+                    total += coffeeTypeTotal();
+                    total += shotsTotal();
+                    total += milkTotal();
+                    total += extraTotal();
+                    $("#totaltarget").html(total);
+                }
+                
+                function coffeeRow() {
+                    //grab the two id's, just to make the next step easier to read
+                    var coffeeID = $("input[name='coffeetype']:checked").attr('id');
+                    var sizeID = $("input[name='size']:checked").attr('id');
+                    
+                    //grab the text from the label for the element for our output
+                    var coffeeLabel = $("label[for='"+coffeeID+"']").text();
+                    var sizeLabel = $("label[for='"+sizeID+"']").text();
+                    
+                    var coffeeCalories = $("input[name='coffeetype']:checked").val() * $("input[name='size']:checked").val();
+                    
+                    var coffeetr = [coffeeLabel, sizeLabel, coffeeCalories];
+                    
+                    return coffeetr;
+                }
+                
+                function shotsRow() {
+                    shotsNum = parseInt($("#shots").val());
+                    if(shotsNum > 0){
+                        shotsLabel = $("label[for='shots']").text();
+                        
+                        var shotstr = [shotsLabel, shotsNum, shotsNum];
+                        
+                        return shotstr;
+                    }
+                }
+                
+                function milkRow(){
+                    var milkID = $("input[name='milk']:checked").attr('id');
+                    if(milkID != "none"){
+                        var milkLabel = $("label[for='"+milkID+"']").text();
+                        var milkNum = parseInt($("#"+milkID).val());
+                        
+                        var milktr = [milkLabel, 1, milkNum];
+                        
+                        return milktr;
+                    }
+                }
+                
+                function extraRows(){
+                   var extrasArr = [];
+                    $(".extra:checkbox:checked").each(function(index){
+                       thisID = $(this).attr('id');
+
+                       var thisLabel = $("label[for='"+thisID+"']").text();
+
+                       var thisNum = parseInt($("input[type='number'][name= " + this.name + "]").val());
+
+                       var thisCalorie = parseInt($(this).val()) * thisNum;
+
+                       var thisRow = [thisLabel, thisNum, thisCalorie];
+
+                       extrasArr[index] = thisRow;
+                    });
+                    return extrasArr;
+                }
+                
+                function tableMaker() {
+                    var tablearr = [];
+                    
+                    tablearr.push(coffeeRow());
+                    
+                    if(parseInt($("#shots").val()) > 0)
+                    {
+                        tablearr.push(shotsRow());
+                    }
+                    
+                    if($("input[name='milk']:checked").attr('id') != "none")
+                    {
+                        tablearr.push(milkRow());
+                    }
+                    
+                    if(extraRows().length > 0)
+                    {
+                        extratr = extraRows();
+                        $.each(extratr, function(i,a){
+                            tablearr.push(a);
+                        });
+                    }
+                    
+                    var html = "";
+                    $.each(tablearr,function(i,a){
+                        html += "<tr>"
+                        $.each(a, function(ind,arr){
+                            html +="<td>"
+                            html += tablearr[i][ind];
+                            html +="</td>"
+                        });
+                        html += "</tr>"
+                    });
+                    $('#outtable > tbody').html(html);
+                }
+                
+                //if the class 'extras' is checked we set it's value to one, and then the user can increase it.
+                $(".extra:checkbox").change(function(){
+                    //I append the javascript this.name into the jquery string for the selector so that the checked box only changes the number input field with the same name.
+                    if(this.checked){
+                        $("input[type='number'][name= " + this.name + "]").val('1');
+                        
+                        //set the min for checked boxes
+                        $("input[type='number'][name= " + this.name + "]").attr({"min":"1"});
+                        //let it be changed
+                        $("input[type='number'][name= " + this.name + "]").prop('disabled', false);
+                        
+                    }
+                    else{
+                        $("input[type='number'][name= " + this.name + "]").val('0');
+                        //if this box was checked and then unchecked, the min  value would no longer be zero, but one. That would mess up our logic!!
+                        $("input[type='number'][name= " + this.name + "]").attr({"min":"0"});
+                        //change it back to disabled
+                        $("input[type='number'][name= " + this.name + "]").prop('disabled', true);
+                        
+                    }
+                });
+                
+                function coffeeCalculation(){
+                    if(coffeeTypeValidation()){
+                        calorieTotal();
+                        tableMaker();
+                    }
+                    return false;
+                    
+                }
+            </script>
+    </body>
+</html>

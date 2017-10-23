@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Fascinate+Inline|Comfortaa');
+
+body {
+    background-color: #6a371c;
+}
+
+h1{
+    color: antiquewhite;
+    font-family: "Fascinate Inline";
+}
+h2, h3, h4 {
+    font-family: "Comfortaa"
+}
+
+.inner{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    background-color: #cc925d;
+    color: antiquewhite;
+}
+
+input[type="number"] {
+    border: none;
+    border-radius: 5px;
+    padding: 2px;
+    background-color: white;
+}
+
+input[type="number"]:disabled {
+    background-color: #dddddd;
+    color: #999999;
+}
+
+.inside, #outtable, .outtotal {
+    background-color: antiquewhite;
+    color: #6a371c;
+    padding:10px;
+    border-radius: 5px;
+}
+
+input[type="submit"]{
+    width:50%;
+    background-color: #6a371c;
+    border: none;
+    margin: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 24px;
+    border-radius: 10px;
+    box-shadow: 0 9px #000;
+}
+input[type="submit"]:active{
+    background-color: #521808;
+    box-shadow: 0 5px #000;
+    transform: translateY(4px);
+}
+
+
+.output{
+    padding:10px;
+    border-radius:10px;
+    background-color:#6a371c;
+}
