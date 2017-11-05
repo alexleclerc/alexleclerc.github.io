@@ -109,7 +109,39 @@ I realized I could use a regular expression to easily grab the operator and the 
 
 I play with the original Java code and notice it takes more than 3 numbers as valid input. I spent some time scratching my head as to how to use Regular expression (regex) groups to pull `n` number of groups.
 
-I thought the java application was applying the operator to all three elements, and kept reading the code not understanding how. I thought about how to use either the parse functionality or regular expressions for 2 + n number of arguments. After I was done thinking that through, I ran the java program again and realized it could take more than 2 arguments, but it would ignore any more arguments than the two before the operator. 
+I thought the java application was applying the operator to all three elements, and kept reading the code not understanding how. 
+
+In an attempt to understand it better, I wrote my observations and a plan to address them in C# :  
+
+**What is it doing?**
+* Initializing variables
+* checking for a next item   
+    * checks if next item is number
+	   * if true, 
+	       * push it on the stack as a double
+       * else, (its an operator or something)
+           * get the next 
+                * if it's bigger than 1 length
+				throw error because thats not what we want!
+			    * if theres nothing else,
+				    * throw an exception because there's not enough arguments!
+			    * assign b to the next popped double
+			    * if theres nothing next
+				    * throw an exception because theres	not enough arguments!
+			    * assign a to the next popped double
+			    * doOperation() on both arguments and operator, assign to c
+			    * push c to the stack
+			    * pop c off the stack in the return
+
+**What mine should do:**
+* Assign the first regex 
+* If it's a match, 
+	* evaluate group 1 (decimals)
+		* perform a match all and pull out the decimals
+	
+		* push two decimal groups onto stack
+
+I thought about how to use either the parse functionality or regular expressions for 2 + n number of arguments. After I was done thinking that through, I ran the java program again and realized it could take more than 2 arguments, but it would ignore any more arguments than the two before the operator. 
 
 ### 3.3 Regular Expresssions
 
