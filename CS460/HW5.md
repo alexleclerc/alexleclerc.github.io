@@ -1,5 +1,5 @@
 # Homework 5
-[Repo](https://github.com/alexleclerc/CS460/tree/hw5/homework5)
+[Repo](https://github.com/alexleclerc/CS460)
 
 For this weeks homework we are to replicate a [form from the Oregon DMV's website](http://www.oregon.gov/ODOT/Forms/DMV/6438fill.pdf). We're ignoring the signature and the voter information, but taking everything else from the form. It needs two pages, a page to view pending requests and a page to submit new requests. This will use a database but it will be a small one made from scratch (as opposed to an imported one).
 
@@ -30,7 +30,7 @@ VALUES ('Dude', 'Man', 'Bro', '06/10/1996', '111 Rad ave', 'Lit City', 'Oregon',
 It's added to the project folder `App_Data` using `Add > Existing Item`.
 
 We can run it to create the database. When it's run it can be connected to a local server using the lil' connect button on the bar.
-![Connect Button Example](img/hw5databaseconnect.PNG)
+![Connect Button Example](img/hw5databaseconnect.png)
 
 In server explorer sidebar we can check our tables as they are stored in the database to see if everything happened okay.
 
@@ -110,7 +110,7 @@ The labels and fields are pulled from the model.
     </div>
 </div>
 ```
-![Example of the Addresses view page](img/hw5formexample.PNG)
+![Example of the Addresses view page](img/hw5formexample.png)
 
 In the `Requests` view we display the information that was added to the table using the model again. We have to structure it a little bit with HTML. The first part is the table headers.
 ```html
@@ -166,4 +166,4 @@ Things had been going smoothly with Git up until this point. For some reason the
 
 I also had some problems with git trying to add homework4 files. I eventually fixed it without deleting anything by temporarily adding them to the gitignore in my root directory.
 
-I also had computer problems right in the middle of working on this. (It's a long story involving corrupted Windows updates...) I forgot to remake my DMV_down file when SQL crashed so I had to add it in after the fact. 
+My computer also wanted to cause trouble right in the middle of working on this. (It's a long story involving a corrupted Windows update...) I forgot to remake my DMV_down file when SQL crashed so I had to add it in later.
