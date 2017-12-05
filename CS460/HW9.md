@@ -62,4 +62,4 @@ Under application settings scroll down to connection string, add the name (exact
 
 The project should be ready to view now. It is viewable under app services, clicking on the name link, Overview, and under the URL portion.
 
-![Find URL Image](hw9link.PNG)
+![Find URL Image](img/hw9link.PNG)
